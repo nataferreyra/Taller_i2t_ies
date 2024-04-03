@@ -1,1 +1,171 @@
-<p>login works!</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- Agrega aquí tus enlaces a las bibliotecas necesarias, como Angular Material y FontAwesome, si aún no los has agregado -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Vibur">
+    <!-- Agrega aquí tus enlaces al CSS generado -->
+    <style>
+        /* Coloca aquí tu CSS generado */
+    </style>
+</head>
+
+<body class="fondo-login">
+    <div id="login-page" class="container open">
+        <h1>Login</h1>
+        <div class="form-set">
+            <div class="form-group">
+                <label for="username" class="form-label">Usuario</label>
+                <input type="text" class="form-control" id="username">
+            </div>
+            <div class="form-group">
+                <label for="password" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="password">
+            </div>
+            <button class="btn">Iniciar</button>
+        </div>
+        <div class="login-with">
+            <div class="title">Logearse con</div>
+            <div class="social">
+                <ul class="icons">
+                    <li class="icon facebook">
+                        <div class="link" data-close="login-page" data-open="facebook-page">
+                            <i class="fab fa-facebook custom-icon"></i>
+                        </div>
+                    </li>
+                    <li class="icon twitter">
+                        <div class="link" data-close="login-page" data-open="twitter-page">
+                            <i class="fab fa-twitter custom-icon"></i>
+                        </div>
+                    </li>
+                    <li class="icon pinterest">
+                        <div class="link" data-close="login-page" data-open="pinterest-page">
+                            <i class="fab fa-pinterest custom-icon"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="other-links">
+            <div>
+                <div class="link" data-close="login-page" data-open="new-account-page">¿No tienes una cuenta?</div>
+            </div>
+            <div>
+                <div class="link" data-close="login-page" data-open="forgot-pass-page">¿Olvidaste tu contraseña?</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="facebook-page" class="container close">
+        <div class='close-button'>
+            <div class="link" data-close="facebook-page" data-open="login-page">
+                <i class='fa fa-close' aria-hidden='true'></i>
+            </div>
+        </div>
+        <h1>Facebook</h1>
+        <div class="form-set">
+            <div class="form-group">
+                <label for="fb-username" class="form-label">User Name</label>
+                <input type="text" class="form-control" id="fb-username">
+            </div>
+            <div class="form-group">
+                <label for="fb-password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="fb-password">
+            </div>
+            <button class="btn">Log in</button>
+        </div>
+    </div>
+
+    <div id="twitter-page" class="container close">
+        <div class='close-button'>
+            <div class="link" data-close="twitter-page" data-open="login-page">
+                <i class='fa fa-close' aria-hidden='true'></i>
+            </div>
+        </div>
+        <h1>Twitter</h1>
+        <div class="form-set">
+            <div class="form-group">
+                <label for="tw-username" class="form-label">User Name</label>
+                <input type="text" class="form-control" id="tw-username">
+            </div>
+            <div class="form-group">
+                <label for="tw-password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="tw-password">
+            </div>
+            <button class="btn">Log in</button>
+        </div>
+    </div>
+
+    <div id="pinterest-page" class="container close">
+        <div class='close-button'>
+            <div class="link" data-close="pinterest-page" data-open="login-page">
+                <i class='fa fa-close' aria-hidden='true'></i>
+            </div>
+        </div>
+        <h1>Pinterest</h1>
+        <div class="form-set">
+            <div class="form-group">
+                <label for="pin-username" class="form-label">User Name</label>
+                <input type="text" class="form-control" id="pin-username">
+            </div>
+            <div class="form-group">
+                <label for="pin-password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="pin-password">
+            </div>
+            <button class="btn">Log in</button>
+        </div>
+    </div>
+
+    <div id="new-account-page" class="container close">
+        <div class='close-button'>
+            <div class="link" data-close="new-account-page" data-open="login-page">
+                <i class='fa fa-close' aria-hidden='true'></i>
+            </div>
+        </div>
+        <h1>New Account</h1>
+        <div class="form-set">
+            <div class="form-group">
+                <label for="new-username" class="form-label">User Name</label>
+                <input type="text" class="form-control" id="new-username">
+            </div>
+            <div class="form-group">
+                <label for="new-password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="new-password">
+            </div>
+            <div class="form-group">
+                <label for="confirm-password" class="form-label">Password again</label>
+                <input type="password" class="form-control" id="confirm-password">
+            </div>
+            <div class="form-group">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="text" class="form-control" id="email">
+            </div>
+            <button class="btn">Create Account</button>
+        </div>
+    </div>
+
+    <div id="forgot-pass-page" class="container close">
+        <div class='close-button'>
+            <div class="link" data-close="forgot-pass-page" data-open="login-page">
+                <i class='fa fa-close' aria-hidden='true'></i>
+            </div>
+        </div>
+        <h1>Forgot password?</h1>
+        <div class="form-set">
+            <div class="form-group">
+                <label for="forgot-email" class="form-label">E-mail</label>
+                <input type="text" class="form-control" id="forgot-email">
+            </div>
+            <button class="btn">Send</button>
+        </div>
+    </div>
+
+    <!-- Agrega aquí tus enlaces a FontAwesome, si aún no los has agregado -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</body>
+
+</html>
